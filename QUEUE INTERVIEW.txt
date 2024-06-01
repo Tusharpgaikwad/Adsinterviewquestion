@@ -1,0 +1,109 @@
+ADS INTERVIEW QUESTION
+
+Q1 What are some common scenarios where queues are used?List some Queue real-life applications
+ANS: 
+Applied as buffers on playing music in the mp3 players or CD players.
+Applied on handling the interruption in the operating system.
+Applied to add a song at the end of the playlist.
+Applied as the waiting queue for using the single shared resources like CPU, Printers, or Disk.
+Applied to the chat application when someone sends messages to us and we don’t have an internet connection 
+then the messages are stored in the server of the chat application.
+
+Q2 What is Queue?
+ANS :
+A queue is basically a linear data structure that works on the principle of FIFO (First in First out) 
+which means an element that is enqueued first will be dequeued first.
+Element is enqueued from the rear end of the queue and dequeued from the front end. 
+The insertion operation in the queue is known as enqueue and the deletion operation in the queue is known as dequeue.
+
+Q3 Why and when should I use Stack or Queue data structures instead of Arrays/Lists? 
+ANS :
+We use stack or queue instead of arrays/lists when we want the elements in a specific order i.e. 
+in the order we put them (queue) or in the reverse order (stack). 
+Queues and stacks are dynamic while arrays are static. So when we require dynamic memory we use queue or stack over arrays. 
+Stacks and queues are used over arrays when sequential access is required.
+To efficiently remove any data from the start (queue) or the end (stack) of a data structure.
+When you want to get items out in the same order that you put them in, use a queue (FIFO)
+When you need to bring things out in the opposite order that they were put in, use a stack (LIFO)
+
+Q4 What is Complexity Analysis of Queue operations?
+ANS:
+in case of a Queue too, we know exactly, on which position new element will be added and from
+ where an element will be removed,
+hence both these operations requires a single step. Enqueue: O(1) Dequeue: O(1) Size: O(1)
+
+Q5: What are some types of Queue?
+ANS:
+Types of queues:
+Simple Queue: In a Simple queue, insertion of the element takes place at the rear end i.e. ENQUEUE, 
+and removal of the element takes place at the front end i.e. DEQUEUE. The simple queue is also called a linear queue.
+
+Circular Queue: In a circular queue, the elements act like circular rings. 
+The working of a circular queue is similar to a simple queue but in a circular queue, 
+the element in the last position is connected to the element in the first position. 
+The main advantage of a circular queue is that the memory will be utilized in a better way.
+
+Priority Queue: In a priority queue, the elements are stored according to their priority, 
+Based on the priority of elements we’ll set our queue accordingly i.e. in ascending order or in descending order.
+
+Dequeue: Dequeue is known as a double-ended queue. In dequeue, the elements can be inserted or removed from both ends.
+Due to this property, the dequeue may not follow the first in first out property.
+
+Q6: What are benefits of Circular Queue?
+ANS:
+Flexible in insertion-deletion: In a circular queue, elements can be added easily if the Queue isn’t full. 
+But in the linear Queue, elements can’t be added furthermore, once the rear-end points to the last index. 
+
+Memory efficiency: Circular Queue is memory more efficient than a linear Queue as we can add elements until complete. 
+Thus, no space is left over. While in a linear queue, once the Queue is full, if we start to dequeue, the front indexes 
+become vacant, and then they can never be filled. Thus, there is a wastage of space.
+ 
+
+Q7: Name some Queue implementations and compare them by efficiency of operations
+ANS
+comparison are send on whatsapp and complation of q8
+A queue can be implemented in two ways:
+Array implementation of queue
+Linked List implementation of queue 
+
+Q8.What is a Dequeue?
+ANS:
+The deque stands for Double Ended Queue. 
+Deque is a linear data structure where the insertion and deletion operations are performed from both ends. 
+
+Q9.What is a Priority Queue where is it used give example?
+ANS:
+ a regular queue has a first in first out structure. 
+ But in some scenarios we want to process messages in a queue based on their priority and 
+ not based on when the message entered the queue.
+Priority queues help consumers consume the higher priority messages first followed by the lower priority messages.
+The hospital emergency queue is an ideal real-life example of a priority queue. 
+In this queue of patients, the patient with the most critical situation is the first in a queue, 
+and the patient who doesn’t need immediate medical attention will be the last. 
+In this queue, the priority depends on the medical condition of the patients.
+
+Q10 How to manage Full Circular Queue event?
+ANS:
+Managing Full Circular Queue
+ First initialize the queue, the size of the queue (i.e. MaxSize), and front & rear pointers.
+ Enqueue:
+Check if the no. of elements is equal to the max size of the queue.
+If true, Print “Queue is full”
+If false, increment the rear pointer by 1. 
+ Dequeue:
+Check if the no. of elements is equal to zero
+If true, Print “Queue is empty”.
+If false, increment the front position by 1.
+ Size:
+If rear ≥ front then, size = rear – front.
+If front > rear then, size = MaxSize – (front – rear).
+
+Q11 Name most efficient way to implement Stack and Queue together How do I convert a Queue into the Stack?
+ANS:
+A two-way linked list is going to be best for this. 
+Each node in the list has two references: one to the item before it and one to the item after it. 
+The main list object maintains a reference to the item at the front of the list and one at the back of the list.
+
+
+
+

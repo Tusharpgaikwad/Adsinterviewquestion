@@ -1,0 +1,112 @@
+Q1 Difference between Array and Linklist
+ANS:
+https://www.studytonight.com/difference-between/array-vs-linked-list
+
+Q2 List types of Linked List
+ANS: 
+1) SLL
+2) DLL 
+3) CLL
+
+Q3 List some advantages of Linked List
+ANS:
+1) Dynamic growth/shrinkage
+A linked list grows or shrinks dynamically depending upon how many items you want to add to your linked list. 
+You don't have to specify its length initially. 
+This makes them very useful when working with large amounts of data.  
+
+2) Easy implementation
+Data structures like stacks and queues can be easily implemented using linked lists.
+
+3) Easy insertion and deletion
+It's really simple to insert and remove the nodes. 
+We don't have to move elements after they are added or removed, which is unlike what happens in Arrays. 
+
+4) No space overhead
+Since linked lists do not use any additional storage area apart from what is required by the actual elements themselves, 
+they provide better performance than arrays. 
+
+Q4) Mention some drawbacks of the linked list.
+ANS:
+1) More consumption of memory 
+As compared to an array, the linked list requires more memory
+2) Traversal is difficult
+Elements or nodes traversal is difficult in the linked list.
+3) Reverse traversing causes memory wastage
+It is not possible in a singly linked list to reverse traverse, 
+but it can be done with a doubly-linked list as it comprises the next pointer to the previously connected nodes with each node. 
+There is a wastage of memory due to the extra memory required for the back pointer.
+4) Issues with random access
+Random access cannot be performed in a linked list due to its dynamic memory allocation factor.
+
+Q5) List real time applications of Linked List.
+ANS:
+Linked lists have many applications both in computer science and in the real world.
+Some computer science applications include polynomial manipulations, implementation of advanced data structures, etc.
+Few real-world applications include web browsers, back buttons, music players, image viewers, etc.
+We can perform operations like addition, multiplication, etc. on polynomials with the help of linked lists.
+
+Some important applications of a linked list include :
+========================================================
+
+Allocation of Memory
+Email applications
+Reducing file sizes on disk
+Implementation of advanced data structures
+
+Q6) Which data structures can we implement using linked list?
+ ANS:
+ Stack and Queue data structure are implementedd using Linked list data 
+ structure.
+ 
+Q7) List various operations performed on Linked list.
+ANS: 
+==Linked List Insertion
+==Search an element in a Linked List (Iterative and Recursive)
+==Find Length of a Linked List (Iterative and Recursive)
+==Reverse a linked list
+==Linked List Deletion (Deleting a given key)
+==Linked List Deletion (Deleting a key at given position)
+==Write a function to delete a Linked List
+==Write a function to get Nth node in a Linked List
+==Nth node from the end of a Linked List.
+
+Q8) Explain what does it mean by self-referential structure? Explain its need?
+ANS:
+A structure can have members which point to a structure variable of the same type.
+ These types of structures are called self referential structures and are widely used in
+dynamic data structures like trees, linked list, etc.
+Here, next is a pointer to a struct node variable.
+ It should be remembered that a pointer to a structure is similar to a pointer to any other
+variable.
+ A self referential data structure is essentially a structure definition which includes at least
+one member that is a pointer to the structure of its own kind. 
+Such self referential structures are very useful in applications that involve linked data
+structures, such as lists and trees.
+ Unlike a static data structure such as array where the number of elements that can be
+inserted in the array is limited by the size of the array, a self referential structure can
+dynamically be expanded or contracted.
+ Operations like insertion or deletion of nodes in a self referential structure involve simple
+and straight forward alteration of pointers. 
+
+Q9)Mention a package that is used for Linked List class in Java.
+ANS:
+Linked List is a part of the Collection framework present in java.util package. 
+This class is an implementation of the LinkedList data structure which is a linear data structure 
+where the elements are not stored in contiguous locations and every element is a separate object with a data part 
+and address part. 
+The elements are linked using pointers and addresses. Each element is known as a node. 
+
+Q10) Mention some interfaces implemented by Linked List in Java
+ANS: The LinkedList class implements Queue and Deque interfaces. 
+Therefore, It can also be used as a Queue , Deque or Stack .
+
+Q11) Explain linked list and its structure?
+ANS: bookmark kel titun theory waach
+
+
+Q12) How to detect whether linked list is linear or circular?
+ANS :
+To check whether the linked list is circular or not, we will store the header node into some other variable, 
+then traverse the list, if we get null at the next part of any node, then that is not circular, 
+otherwise we will check the next node is same as the stored node or not, if so then that is circular.
