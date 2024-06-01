@@ -1,3 +1,5 @@
+ads interview 
+
 Q1 Difference between Array and Linklist
 ANS:
 https://www.studytonight.com/difference-between/array-vs-linked-list
